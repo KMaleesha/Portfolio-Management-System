@@ -7,6 +7,9 @@ const customerRoutes = require('./routes/customerRouter');
 
 const app = express();
 
+// Enable CORS for all routes
+app.use(cors());
+
 // Middleware to parse JSON
 app.use(express.json());
 
