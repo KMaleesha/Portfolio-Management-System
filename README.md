@@ -29,12 +29,10 @@ Setting Up the Frontend
   1. Navigate to the frontend directory: cd frontend
   2. Install the dependencies: flutter pub get
   3. Run the Flutter application: flutter run
-     
-![Screenshot 2024-07-05 174238](https://github.com/KMaleesha/Portfolio-Management-System/assets/86143734/f19edf7f-49dc-489d-bcb8-2b5266fa3e40)
 
-![Screenshot 2024-07-05 174327](https://github.com/KMaleesha/Portfolio-Management-System/assets/86143734/f7caf5fa-e9bb-4c3e-b6ef-b6f9222112de)
+![Screenshot 2024-07-05 180020](https://github.com/KMaleesha/Portfolio-Management-System/assets/86143734/b5a302b5-26a3-41eb-b3bb-4815f07238a1)
 
-![Screenshot 2024-07-05 174349](https://github.com/KMaleesha/Portfolio-Management-System/assets/86143734/7dc453c4-7b83-4006-879e-a79a1fd953c4)
+
 
 
 
