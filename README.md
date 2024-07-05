@@ -18,7 +18,7 @@ Make sure you have the following installed:
 
 # Run the Program
 Clone the Repository
-  1. git cone < repository URL > 
+  1. git clone < repository URL > 
 
 Setting Up the Backend
   1. Navigate to the backend directory: cd backend
