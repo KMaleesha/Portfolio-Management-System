@@ -53,33 +53,50 @@ class _UpdateCustomerPageState extends State<UpdateCustomerPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(''),
-        leading: IconButton(
-          icon: Icon(Icons.arrow_back),
-          onPressed: () {
-            Navigator.pop(context);
-          },
-        ),
+        backgroundColor:
+            Color.fromARGB(255, 170, 254, 140), // Light green color
+        title: Text('My Portfolio'), // Set your custom title here
+        automaticallyImplyLeading: false, // Disable back arrow
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
-        child: Form(
-          child: Column(
-            children: <Widget>[
-              TextFormField(
-                controller: _customerNameController,
-                decoration: InputDecoration(labelText: 'Customer Name'),
+        child: SingleChildScrollView(
+          child: Card(
+            elevation: 5,
+            shadowColor: Colors.grey[400], // Shadow color
+            child: Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: <Widget>[
+                  TextFormField(
+                    controller: _customerNameController,
+                    decoration: InputDecoration(labelText: 'Customer Name'),
+                  ),
+                  SizedBox(height: 16),
+                  TextFormField(
+                    controller: _locationDataController,
+                    decoration: InputDecoration(labelText: 'Location Data'),
+                  ),
+                  SizedBox(height: 20),
+                  ElevatedButton(
+                    onPressed: _updateCustomer,
+                    style: ButtonStyle(
+                      backgroundColor: MaterialStateProperty.all<Color>(
+                        Color.fromARGB(255, 169, 203, 231), // Background color
+                      ),
+                      foregroundColor: MaterialStateProperty.all<Color>(
+                        Colors.black, // Text color
+                      ),
+                      textStyle: MaterialStateProperty.all<TextStyle>(
+                        TextStyle(fontSize: 16), // Corrected text size
+                      ),
+                    ),
+                    child: Text('Update'),
+                  ),
+                ],
               ),
-              TextFormField(
-                controller: _locationDataController,
-                decoration: InputDecoration(labelText: 'Location Data'),
-              ),
-              SizedBox(height: 20),
-              ElevatedButton(
-                onPressed: _updateCustomer,
-                child: Text('Update'),
-              ),
-            ],
+            ),
           ),
         ),
       ),

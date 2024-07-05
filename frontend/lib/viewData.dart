@@ -80,12 +80,13 @@ class _ViewDataState extends State<ViewData> {
                   color: Colors.white, // Replace with your desired color
                   child: ListTile(
                     title: Text(customer['customerName'] ?? ''),
-                    subtitle: Text(customer['locationData'] ?? ''),
+                    // subtitle: Text(customer['locationData'] ?? ''),
                     trailing: Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
                         IconButton(
-                          icon: Icon(Icons.edit),
+                          icon: Icon(Icons.edit,
+                              color: const Color.fromARGB(255, 100, 171, 229)),
                           onPressed: () {
                             Navigator.push(
                               context,
@@ -101,7 +102,10 @@ class _ViewDataState extends State<ViewData> {
                           },
                         ),
                         IconButton(
-                          icon: Icon(Icons.delete),
+                          icon: Icon(
+                            Icons.delete,
+                            color: const Color.fromARGB(255, 230, 105, 105),
+                          ),
                           onPressed: () {
                             if (customer['_id'] != null) {
                               _deleteCustomer(customer['_id']);
