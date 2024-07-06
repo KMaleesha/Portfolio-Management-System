@@ -40,8 +40,7 @@ class _MapsSampleAppState extends State<MapsSampleApp> {
               ),
             ),
           ),
-          SizedBox(
-              height: 16.0), // Added SizedBox to create space between cards
+          SizedBox(height: 16.0),
           Expanded(
             child: Card(
               elevation: 5,
@@ -139,20 +138,20 @@ class _LocationDataFormState extends State<LocationDataForm> {
           TextFormField(
             controller: widget.locationDataController,
             decoration: InputDecoration(labelText: 'Location Data'),
-            enabled: false, // Disable editing
+            enabled: false,
           ),
           SizedBox(height: 20),
           ElevatedButton(
             onPressed: _submitForm,
             style: ButtonStyle(
               backgroundColor: MaterialStateProperty.all<Color>(
-                Color.fromARGB(255, 169, 203, 231), // Background color
+                Color.fromARGB(255, 169, 203, 231),
               ),
               foregroundColor: MaterialStateProperty.all<Color>(
-                Colors.black, // Text color
+                Colors.black,
               ),
               textStyle: MaterialStateProperty.all<TextStyle>(
-                TextStyle(fontSize: 16), // Text size
+                TextStyle(fontSize: 16),
               ),
             ),
             child: Text('Submit'),
